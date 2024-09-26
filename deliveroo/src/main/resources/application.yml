@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+application:
+  minio:
+    applicationName: fastFood
+    host: https://localhost:9090
+    username: fastFood
+    password: Yaironman@.26
+
+springdoc:
+  swagger-ui:
+    path: /in12345
+
+spring:
+  security:
+    jwt:
+      secret-key: "yourSecretKey"
+      expiration: 3600000 # e.g., 1 hour in milliseconds
+      refresh-token:
+        expiration: 7200000 # e.g., 2 hours in milliseconds
